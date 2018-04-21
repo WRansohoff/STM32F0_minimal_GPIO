@@ -5,7 +5,7 @@
  */
 int main(void) {
   // Enable the GPIOB peripheral in 'RCC_AHBENR'.
-  RCC->AHBENR   |= 0x00040000;
+  RCC->AHBENR   |= RCC_AHBENR_GPIOBEN;
   // Initialize the GPIOB pins.
   // B1 should be set to 'input' mode with pull-up.
   GPIOB->MODER  &= ~(0x3 << (BUTTON_PIN*2));
