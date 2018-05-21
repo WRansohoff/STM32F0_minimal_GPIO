@@ -8,7 +8,7 @@ The example project initializes pin B1 as input with a built-in pull-up resistor
 
 # Uploading and Debugging
 
-A Makefile is provided, and I've tested the program with a 'Nucleo-32' board with the STM32F031K6 chip. To upload the resulting program, you can use your choice of uploader/debugger. I use GDB and Texane's "stlink" project:
+A Makefile is provided, and I've tested the program with a 'Nucleo-32' board using the STM32F031K6 chip. To upload the resulting program, you can use your choice of uploader/debugger. I use GDB and Texane's "stlink" project:
 
 https://github.com/texane/stlink
 

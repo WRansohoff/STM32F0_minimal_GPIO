@@ -17,7 +17,7 @@ int main(void) {
   GPIOB->MODER  |=  (0x1 << (LED_PIN*2));
   GPIOB->OTYPER &= ~(1 << LED_PIN);
   // Keep track of whether the button is pressed.
-  unsigned char button_down = 0;
+  uint8_t button_down = 0;
   while (1) {
     // Invert the IDR register since '0' means 'pressed'.
     uint32_t idr_val = ~GPIOB->IDR;
